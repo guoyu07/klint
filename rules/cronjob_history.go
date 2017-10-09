@@ -4,7 +4,7 @@ import (
 	"fmt"
 	log "github.com/Sirupsen/logrus"
 
-	"github.com/uswitch/klint/engine"
+	"github.com/pusher/klint/engine"
 
 	batchv2 "k8s.io/api/batch/v2alpha1"
 	"k8s.io/apimachinery/pkg/runtime"

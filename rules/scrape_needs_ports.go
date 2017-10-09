@@ -6,7 +6,7 @@ import (
 	extv1b1 "k8s.io/api/extensions/v1beta1"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/uswitch/klint/engine"
+	"github.com/pusher/klint/engine"
 )
 
 func validScrapeAndPorts(d *extv1b1.Deployment) bool {

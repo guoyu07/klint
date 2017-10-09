@@ -11,9 +11,9 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/uswitch/klint/alerts"
-	"github.com/uswitch/klint/engine"
-	"github.com/uswitch/klint/rules"
+	"github.com/pusher/klint/alerts"
+	"github.com/pusher/klint/engine"
+	"github.com/pusher/klint/rules"
 )
 
 type options struct {

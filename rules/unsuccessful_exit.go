@@ -6,7 +6,7 @@ import (
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/uswitch/klint/engine"
+	"github.com/pusher/klint/engine"
 )
 
 var UnsuccessfulExitRule = engine.NewRule(
