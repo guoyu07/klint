@@ -22,6 +22,8 @@ var UnsuccessfulExitRule = engine.NewRule(
 				switch exitCode := c.State.Terminated.ExitCode; exitCode {
 				case 0: // Everything was OK
 					break
+				case 2: // Kubernetes SIGTERM (I think)
+					logger.Infof("Pod %s.%s (container: `%s`) exited with status `2`. Reason: %s", pod.ObjectMeta.Namespace, pod.ObjectMeta.Name, c.Name, c.State.Terminated.Reason)
 				case 143: // JVM SIGTERM
 					break
 				case 137: // Process got SIGKILLd
